@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- @parts: head-common（差し替え：title / description / og:url / og:image）
+       他ページへ複製する際は title と description と og:url を変更する。 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トップ｜炭火とビール 灯り屋</title>
+  <meta name="description" content="甲府駅 徒歩7分。甲州地どりの炭火串と山梨クラフトビール常時5種。カウンターと小上がりの大衆居酒屋「灯り屋（あかりや）」。今日、寄ってく？">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="炭火とビール 灯り屋">
+  <meta property="og:title" content="炭火とビール 灯り屋｜甲府の炭火串とクラフトビール">
+  <meta property="og:description" content="甲州地どりの炭火串と山梨クラフトビール常時5種。甲府駅 徒歩7分の大衆居酒屋。">
+  <meta property="og:url" content="./index.html">
+  <meta property="og:image" content="./assets/img/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- /@parts -->
+</head>
+<body>
+  <!-- @parts: header（差し替え：brand文言・ナビ項目。全ページ共通＝同一HTMLを複製）
+       現在ページのナビには aria-current="page" を付ける。 -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <p class="brand">
+        <a href="index.html">
+          <span class="brand__mark">灯</span>
+          <span class="brand__name">炭火とビール 灯り屋</span>
+        </a>
+      </p>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="globalNav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="globalNav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html" aria-current="page">トップ</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="about.html">お店について</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /@parts -->
+
+  <main>
+    <!-- ヒーロー（FV）：店の雰囲気＋キャッチ「今日、寄ってく？」 -->
+    <section class="hero">
+      <div class="hero__media">
+        <div class="container hero__inner">
+          <span class="hero__badge">甲府駅 徒歩7分 ／ 炭火 × クラフトビール</span>
+          <h1 class="hero__catch">今日、<span class="em">寄ってく？</span></h1>
+          <p class="hero__sub">炭火でじっくり、甲州地どりの串。山梨のクラフトビールは常時5種。仕事帰りに、ふらっと一杯どうぞ。</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="tel:055-000-0000"><span class="btn__ico">☎</span>電話で予約する</a>
+            <a class="btn btn--ghost" href="menu.html">お品書きを見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- @parts: info-card（差し替え：営業時間・定休・tel・地図URL）
+         FV直下に配置。「今やってる？電話は？地図は？」に即答する最重要ブロック。 -->
+    <section class="section section--tight" id="info" aria-labelledby="info-title">
+      <div class="container">
+        <h2 class="sr-only" id="info-title">営業情報</h2>
+        <div class="info-card">
+          <div class="info-card__grid">
+            <dl class="info-row">
+              <dt>営業時間</dt>
+              <dd>17:00〜23:30 <span class="lo">（L.O. 23:00）</span></dd>
+            </dl>
+            <dl class="info-row">
+              <dt>定休日</dt>
+              <dd><span class="badge-closed">日曜定休</span></dd>
+            </dl>
+            <dl class="info-row">
+              <dt>ご予約</dt>
+              <dd class="info-card__tel"><a href="tel:055-000-0000">055-000-0000</a></dd>
+            </dl>
+            <dl class="info-row">
+              <dt>お席</dt>
+              <dd>カウンター8 ／ テーブル12 ／ 小上がり2卓</dd>
+            </dl>
+          </div>
+          <div class="info-card__actions">
+            <a class="btn btn--primary" href="tel:055-000-0000"><span class="btn__ico">☎</span>電話する</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=山梨県甲府市中央1-2-3" target="_blank" rel="noopener"><span class="btn__ico">📍</span>地図を見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /@parts -->
+
+    <!-- @parts: recommend-grid（差し替え：3品の画像・名前・価格・説明）
+         画像は .ph（CSSダミー）。撮影後 <img> に差し替える。 -->
+    <section class="section" id="recommend" aria-labelledby="rec-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <span class="section-head__en">RECOMMEND</span>
+          <h2 class="section-head__ja" id="rec-title">今夜のおすすめ</h2>
+        </header>
+        <div class="recommend__grid">
+
+          <article class="rec-card">
+            <div class="rec-card__media">
+              <div class="ph ph--warm"><span class="ph__label"><strong>甲州地どりの炭火串</strong>串の盛り合わせ・炭火の照り</span></div>
+            </div>
+            <div class="rec-card__body">
+              <h3 class="rec-card__name">甲州地どりの炭火串 <span class="rec-card__price">180円〜</span></h3>
+              <p class="rec-card__desc">備長炭で一気に焼き上げる看板串。もも・つくね・せせり。塩かタレでどうぞ。</p>
+            </div>
+          </article>
+
+          <article class="rec-card">
+            <div class="rec-card__media">
+              <div class="ph ph--warm"><span class="ph__label"><strong>山梨クラフトビール</strong>ジョッキ越しに炭火</span></div>
+            </div>
+            <div class="rec-card__body">
+              <h3 class="rec-card__name">本日のクラフトビール <span class="rec-card__price">780円〜</span></h3>
+              <p class="rec-card__desc">県内ブルワリーから常時5種をタップ。日替わりで注ぎ分け。飲み比べも人気です。</p>
+            </div>
+          </article>
+
+          <article class="rec-card">
+            <div class="rec-card__media">
+              <div class="ph ph--dark"><span class="ph__label"><strong>炭火の一品</strong>季節の炙り・小鉢</span></div>
+            </div>
+            <div class="rec-card__body">
+              <h3 class="rec-card__name">炭火の炙り一品 <span class="rec-card__price">580円〜</span></h3>
+              <p class="rec-card__desc">山梨の旬を炭の香りで。〆まで楽しめる炙りものを日替わりでご用意。</p>
+            </div>
+          </article>
+
+        </div>
+        <p class="center" style="margin-top:var(--space-5)">
+          <a class="btn btn--ghost" href="menu.html">メニューを全部見る →</a>
+        </p>
+      </div>
+    </section>
+    <!-- /@parts -->
+
+    <!-- 店内紹介 -->
+    <section class="section" id="store" aria-labelledby="store-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__en">OUR PLACE</span>
+          <h2 class="section-head__ja" id="store-title">炭火を囲む、夜の止まり木</h2>
+        </header>
+        <p class="lead">カウンター越しに炭火が見える8席と、ゆったりくつろげる小上がり。ひとりの一杯にも、気のおけない宴にも。墨色の店内に提灯の灯りがゆれる、甲府の路地裏の止まり木です。</p>
+        <div class="gallery" style="margin-top:var(--space-5)">
+          <div class="gallery__item"><div class="ph"><span class="ph__label"><strong>カウンター全景</strong>炭火と灯りの引き</span></div></div>
+          <div class="gallery__item"><div class="ph ph--warm"><span class="ph__label"><strong>小上がり</strong>卓の様子</span></div></div>
+          <div class="gallery__item"><div class="ph ph--dark"><span class="ph__label"><strong>外観・提灯</strong>夜の灯り</span></div></div>
+        </div>
+        <p class="center" style="margin-top:var(--space-4)">
+          <a class="btn btn--ghost" href="about.html">お店についてもっと見る →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- @parts: access-section（トップ用ダイジェスト。詳細は access.html） -->
+    <section class="section" id="access" aria-labelledby="access-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__en">ACCESS</span>
+          <h2 class="section-head__ja" id="access-title">アクセス</h2>
+        </header>
+        <div class="map-embed">
+          <iframe
+            title="灯り屋 周辺地図（甲府駅周辺・仮表示）"
+            src="https://www.google.com/maps?q=%E7%94%B2%E5%BA%9C%E9%A7%85&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="map-note">※ 架空の店舗のため、地図は甲府駅周辺を仮表示しています。</p>
+        <div class="info-card" style="margin-top:var(--space-4)">
+          <div class="info-card__grid">
+            <dl class="info-row"><dt>住所</dt><dd>山梨県甲府市中央1-2-3</dd></dl>
+            <dl class="info-row"><dt>最寄り</dt><dd>JR甲府駅 南口より徒歩7分</dd></dl>
+          </div>
+          <div class="info-card__actions">
+            <a class="btn btn--ghost" href="access.html">道順・駐車場を見る</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=山梨県甲府市中央1-2-3" target="_blank" rel="noopener"><span class="btn__ico">📍</span>地図アプリで開く</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /@parts -->
+
+    <!-- @parts: news-list（差し替え：日付・タグ・本文。新着を上に足すだけ） -->
+    <section class="section section--tight" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__en">NEWS</span>
+          <h2 class="section-head__ja" id="news-title">お知らせ</h2>
+        </header>
+        <ul class="news-list">
+          <li class="news-item">
+            <span class="news-item__date">2026.06.10</span>
+            <span class="news-item__tag">タップ</span>
+            <span class="news-item__text">本日のクラフトビールを入れ替えました。今週は柑橘香るセッションIPAが登場。</span>
+          </li>
+          <li class="news-item">
+            <span class="news-item__date">2026.06.01</span>
+            <span class="news-item__tag">メニュー</span>
+            <span class="news-item__text">夏の炙りメニューがはじまりました。冷やし鉢もご用意しています。</span>
+          </li>
+          <li class="news-item">
+            <span class="news-item__date">2026.05.20</span>
+            <span class="news-item__tag">お休み</span>
+            <span class="news-item__text">毎週日曜は定休日です。ご予約はお電話にて承ります。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /@parts -->
+  </main>
+
+  <!-- @parts: footer（全ページ共通＝同一HTMLを複製。サンプル注記は必ず残す） -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h3>炭火とビール 灯り屋</h3>
+          <p class="text-mute">甲州地どりの炭火串と、山梨クラフトビール。<br>甲府駅 徒歩7分、路地裏の大衆居酒屋。</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="フッターメニュー">
+          <h3>メニュー</h3>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="about.html">お店について</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3>店舗情報</h3>
+          <dl>
+            <dt>住所</dt><dd>山梨県甲府市中央1-2-3</dd>
+            <dt>電話</dt><dd><a href="tel:055-000-0000">055-000-0000</a></dd>
+            <dt>営業</dt><dd>17:00〜23:30（L.O.23:00）</dd>
+            <dt>定休</dt><dd>日曜</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="footer-note">
+        ※ このサイトは <strong>山梨HPかけこみ寺</strong> の制作サンプルです（架空の店舗です）。<br>
+        掲載の店名・住所・電話番号・価格はすべてサンプル用の架空のものです。
+      </p>
+    </div>
+  </footer>
+  <!-- /@parts -->
+
+  <!-- @parts: mobile-callbar（差し替え：tel番号・地図URL。スマホのみ表示） -->
+  <nav class="callbar" aria-label="クイック操作">
+    <a class="callbar__tel" href="tel:055-000-0000"><span class="callbar__ico">☎</span>電話する</a>
+    <a class="callbar__map" href="https://www.google.com/maps/search/?api=1&query=山梨県甲府市中央1-2-3" target="_blank" rel="noopener"><span class="callbar__ico">📍</span>地図を見る</a>
+  </nav>
+  <!-- /@parts -->
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

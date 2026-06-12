@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- @parts: head-common
+       注意：GitHub Pages の 404 はサイト直下のどのパスからでも呼ばれ得るため、
+       アセットは「先頭スラッシュ付きの絶対パス」だと安全。ただしプロジェクトページ
+       （user.github.io/repo/）では /assets/ がリポジトリ名を含まずズレる場合がある。
+       本サンプルは相対パス（assets/...）で統一し、リポジトリ直下公開を前提とする。 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ページが見つかりません｜炭火とビール 灯り屋</title>
+  <meta name="description" content="お探しのページは見つかりませんでした。トップページからお探しください。">
+  <meta name="robots" content="noindex">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="炭火とビール 灯り屋">
+  <meta property="og:title" content="ページが見つかりません｜炭火とビール 灯り屋">
+  <meta property="og:description" content="お探しのページは見つかりませんでした。">
+  <meta property="og:url" content="./404.html">
+  <meta property="og:image" content="./assets/img/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- /@parts -->
+</head>
+<body>
+  <!-- @parts: header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <p class="brand">
+        <a href="index.html">
+          <span class="brand__mark">灯</span>
+          <span class="brand__name">炭火とビール 灯り屋</span>
+        </a>
+      </p>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="globalNav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="globalNav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="about.html">お店について</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /@parts -->
+
+  <main>
+    <section class="section">
+      <div class="container notfound">
+        <p class="notfound__code">404</p>
+        <h1>ページが見つかりません</h1>
+        <p class="notfound__lead">お探しのページは、移動または削除された可能性があります。<br>お手数ですが、下のボタンからお探しください。</p>
+        <div class="hero__cta" style="justify-content:center">
+          <a class="btn btn--primary" href="index.html">トップへ戻る</a>
+          <a class="btn btn--ghost" href="menu.html">メニューを見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @parts: footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h3>炭火とビール 灯り屋</h3>
+          <p class="text-mute">甲州地どりの炭火串と、山梨クラフトビール。<br>甲府駅 徒歩7分、路地裏の大衆居酒屋。</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="フッターメニュー">
+          <h3>メニュー</h3>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="about.html">お店について</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3>店舗情報</h3>
+          <dl>
+            <dt>住所</dt><dd>山梨県甲府市中央1-2-3</dd>
+            <dt>電話</dt><dd><a href="tel:055-000-0000">055-000-0000</a></dd>
+            <dt>営業</dt><dd>17:00〜23:30（L.O.23:00）</dd>
+            <dt>定休</dt><dd>日曜</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="footer-note">
+        ※ このサイトは <strong>山梨HPかけこみ寺</strong> の制作サンプルです（架空の店舗です）。<br>
+        掲載の店名・住所・電話番号・価格はすべてサンプル用の架空のものです。
+      </p>
+    </div>
+  </footer>
+  <!-- /@parts -->
+
+  <!-- @parts: mobile-callbar -->
+  <nav class="callbar" aria-label="クイック操作">
+    <a class="callbar__tel" href="tel:055-000-0000"><span class="callbar__ico">☎</span>電話する</a>
+    <a class="callbar__map" href="https://www.google.com/maps/search/?api=1&query=山梨県甲府市中央1-2-3" target="_blank" rel="noopener"><span class="callbar__ico">📍</span>地図を見る</a>
+  </nav>
+  <!-- /@parts -->
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

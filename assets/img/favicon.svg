@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="灯り屋">
+  <!-- 山梨HPかけこみ寺 制作サンプル用 favicon：墨地に提灯＋「灯」 -->
+  <rect width="64" height="64" rx="12" fill="#1F1D1B"/>
+  <!-- 提灯の灯り（暖色グラデーション） -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#F2B05E"/>
+      <stop offset="70%" stop-color="#E8833A"/>
+      <stop offset="100%" stop-color="#9c4f17"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="32" cy="33" rx="19" ry="22" fill="url(#glow)"/>
+  <!-- 提灯の骨（横線） -->
+  <g stroke="#7a3c12" stroke-width="1.6" opacity=".55">
+    <line x1="14" y1="24" x2="50" y2="24"/>
+    <line x1="13" y1="33" x2="51" y2="33"/>
+    <line x1="14" y1="42" x2="50" y2="42"/>
+  </g>
+  <!-- 上下のキャップ -->
+  <rect x="26" y="6" width="12" height="6" rx="2" fill="#6B4A2B"/>
+  <rect x="26" y="52" width="12" height="6" rx="2" fill="#6B4A2B"/>
+  <!-- 「灯」の字 -->
+  <text x="32" y="41" text-anchor="middle" font-family="'Shippori Mincho','Yu Mincho',serif"
+        font-size="26" font-weight="700" fill="#1F1D1B">灯</text>
+</svg>

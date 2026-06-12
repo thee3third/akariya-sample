@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- @parts: head-common -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー｜炭火とビール 灯り屋</title>
+  <meta name="description" content="甲州地どりの炭火串、炭火の一品、〆まで。山梨クラフトビール「本日のタップ」常時5種。灯り屋のお品書きとドリンクメニュー。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="炭火とビール 灯り屋">
+  <meta property="og:title" content="メニュー｜炭火とビール 灯り屋">
+  <meta property="og:description" content="炭火串・一品・締めと、山梨クラフトビール常時5種。灯り屋のお品書き。">
+  <meta property="og:url" content="./menu.html">
+  <meta property="og:image" content="./assets/img/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- /@parts -->
+</head>
+<body>
+  <!-- @parts: header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <p class="brand">
+        <a href="index.html">
+          <span class="brand__mark">灯</span>
+          <span class="brand__name">炭火とビール 灯り屋</span>
+        </a>
+      </p>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="globalNav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="globalNav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="menu.html" aria-current="page">メニュー</a></li>
+          <li><a href="about.html">お店について</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /@parts -->
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <h1>お品書き</h1>
+        <p class="text-mute">炭火と、山梨のビール。価格はすべて税込のサンプル表示です。</p>
+      </div>
+    </div>
+
+    <!-- 本日のタップ（クラフトビール更新枠：ここだけ日々差し替えできる独立ブロック） -->
+    <section class="section section--tight" aria-labelledby="tap-title">
+      <div class="container">
+        <div class="tap-board">
+          <div class="tap-board__head">
+            <h2 id="tap-title">🍺 本日のタップ</h2>
+            <span class="tap-board__date">更新: 2026.06.10</span>
+          </div>
+          <p class="text-mute" style="font-size:.88rem;margin-bottom:var(--space-3)">山梨県内ブルワリーを中心に、常時5種をタップ交換制でお出ししています。樽が空き次第、次の銘柄へ。</p>
+          <div class="tap-list">
+            <div class="tap-item"><span class="tap-item__no">1</span><span class="tap-item__name">甲斐の金麦エール<span class="style">ゴールデンエール / さらり軽快</span></span><span class="tap-item__price">780円</span></div>
+            <div class="tap-item"><span class="tap-item__no">2</span><span class="tap-item__name">八ヶ岳セッションIPA<span class="style">セッションIPA / 柑橘ホップ</span></span><span class="tap-item__price">820円</span></div>
+            <div class="tap-item"><span class="tap-item__no">3</span><span class="tap-item__name">富士桜ヴァイツェン<span class="style">ヴァイツェン / バナナ香</span></span><span class="tap-item__price">820円</span></div>
+            <div class="tap-item"><span class="tap-item__no">4</span><span class="tap-item__name">甲府宿スタウト<span class="style">スタウト / 焙煎ロースト</span></span><span class="tap-item__price">880円</span></div>
+            <div class="tap-item"><span class="tap-item__no">5</span><span class="tap-item__name">峡東ペールエール<span class="style">ペールエール / 王道ホッピー</span></span><span class="tap-item__price">820円</span></div>
+          </div>
+          <p class="menu-note">※ 銘柄は日替わり・売り切れ次第終了です。飲み比べ3種セット（各150ml）1,280円もご用意。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== フード ===== -->
+    <section class="section section--tight" aria-labelledby="food-title">
+      <div class="container">
+        <h2 class="sr-only" id="food-title">フードメニュー</h2>
+
+        <!-- @parts: menu-category（差し替え：カテゴリ名・品目・価格） -->
+        <div class="menu-cat">
+          <h3 class="menu-cat__title">炭火串 <small>SUMIBI KUSHI</small></h3>
+          <div class="menu-list">
+            <div class="menu-item"><span class="menu-item__name">甲州地どり もも</span><span class="menu-item__price">200円</span></div>
+            <div class="menu-item"><span class="menu-item__name">甲州地どり つくね<span class="note">自家製・卵黄添え</span></span><span class="menu-item__price">220円</span></div>
+            <div class="menu-item"><span class="menu-item__name">せせり</span><span class="menu-item__price">200円</span></div>
+            <div class="menu-item"><span class="menu-item__name">かわ ぱりぱり焼き</span><span class="menu-item__price">180円</span></div>
+            <div class="menu-item"><span class="menu-item__name">砂肝</span><span class="menu-item__price">180円</span></div>
+            <div class="menu-item"><span class="menu-item__name">ねぎま</span><span class="menu-item__price">200円</span></div>
+            <div class="menu-item"><span class="menu-item__name">豚バラ</span><span class="menu-item__price">190円</span></div>
+            <div class="menu-item"><span class="menu-item__name">しいたけ肉詰め</span><span class="menu-item__price">240円</span></div>
+          </div>
+          <p class="menu-note">※ 串は1本から。塩・タレをお選びいただけます。お通し380円。</p>
+        </div>
+        <!-- /@parts -->
+
+        <!-- @parts: menu-category -->
+        <div class="menu-cat">
+          <h3 class="menu-cat__title">炭火の一品 <small>IPPIN</small></h3>
+          <div class="menu-list">
+            <div class="menu-item"><span class="menu-item__name">炙りしめ鯖</span><span class="menu-item__price">680円</span></div>
+            <div class="menu-item"><span class="menu-item__name">甲州地どりの炭火たたき</span><span class="menu-item__price">880円</span></div>
+            <div class="menu-item"><span class="menu-item__name">焼き野菜の盛り合わせ</span><span class="menu-item__price">620円</span></div>
+            <div class="menu-item"><span class="menu-item__name">出汁巻き玉子</span><span class="menu-item__price">580円</span></div>
+            <div class="menu-item"><span class="menu-item__name">ポテトサラダ 炭火ベーコン</span><span class="menu-item__price">520円</span></div>
+            <div class="menu-item"><span class="menu-item__name">枝豆 / お新香</span><span class="menu-item__price">380円</span></div>
+          </div>
+        </div>
+        <!-- /@parts -->
+
+        <!-- @parts: menu-category -->
+        <div class="menu-cat">
+          <h3 class="menu-cat__title">締め <small>SHIME</small></h3>
+          <div class="menu-list">
+            <div class="menu-item"><span class="menu-item__name">焼きおにぎり 出汁茶漬け</span><span class="menu-item__price">580円</span></div>
+            <div class="menu-item"><span class="menu-item__name">地どりの親子丼（小）</span><span class="menu-item__price">680円</span></div>
+            <div class="menu-item"><span class="menu-item__name">山梨吉田のうどん</span><span class="menu-item__price">620円</span></div>
+          </div>
+        </div>
+        <!-- /@parts -->
+      </div>
+    </section>
+
+    <!-- ===== ドリンク ===== -->
+    <section class="section section--tight" aria-labelledby="drink-title">
+      <div class="container">
+        <h2 class="sr-only" id="drink-title">ドリンクメニュー</h2>
+
+        <!-- @parts: menu-category -->
+        <div class="menu-cat">
+          <h3 class="menu-cat__title">クラフトビール <small>CRAFT BEER</small></h3>
+          <div class="menu-list">
+            <div class="menu-item"><span class="menu-item__name">本日のタップ（5種）<span class="note">上の「本日のタップ」をご覧ください</span></span><span class="menu-item__price">780円〜</span></div>
+            <div class="menu-item"><span class="menu-item__name">飲み比べ3種セット<span class="note">各150ml</span></span><span class="menu-item__price">1,280円</span></div>
+          </div>
+        </div>
+        <!-- /@parts -->
+
+        <!-- @parts: menu-category -->
+        <div class="menu-cat">
+          <h3 class="menu-cat__title">定番ドリンク <small>STANDARD</small></h3>
+          <div class="menu-list">
+            <div class="menu-item"><span class="menu-item__name">生ビール（中）</span><span class="menu-item__price">580円</span></div>
+            <div class="menu-item"><span class="menu-item__name">ハイボール</span><span class="menu-item__price">480円</span></div>
+            <div class="menu-item"><span class="menu-item__name">レモンサワー / 緑茶ハイ</span><span class="menu-item__price">450円</span></div>
+            <div class="menu-item"><span class="menu-item__name">ウーロン茶 / ジンジャーエール</span><span class="menu-item__price">350円</span></div>
+          </div>
+        </div>
+        <!-- /@parts -->
+
+        <!-- @parts: menu-category -->
+        <div class="menu-cat">
+          <h3 class="menu-cat__title">ワイン・サワー <small>WINE & SOUR</small></h3>
+          <div class="menu-list">
+            <div class="menu-item"><span class="menu-item__name">山梨の甲州（グラス）<span class="note">地元ワイナリーより少々</span></span><span class="menu-item__price">680円</span></div>
+            <div class="menu-item"><span class="menu-item__name">マスカット・ベーリーA（グラス）</span><span class="menu-item__price">680円</span></div>
+            <div class="menu-item"><span class="menu-item__name">自家製果実サワー<span class="note">季節の山梨フルーツ</span></span><span class="menu-item__price">580円</span></div>
+          </div>
+          <p class="menu-note">※ お車でお越しの方へはノンアルコールもご用意しています。飲酒運転は法律で禁止されています。</p>
+        </div>
+        <!-- /@parts -->
+      </div>
+    </section>
+  </main>
+
+  <!-- @parts: footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h3>炭火とビール 灯り屋</h3>
+          <p class="text-mute">甲州地どりの炭火串と、山梨クラフトビール。<br>甲府駅 徒歩7分、路地裏の大衆居酒屋。</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="フッターメニュー">
+          <h3>メニュー</h3>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="about.html">お店について</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3>店舗情報</h3>
+          <dl>
+            <dt>住所</dt><dd>山梨県甲府市中央1-2-3</dd>
+            <dt>電話</dt><dd><a href="tel:055-000-0000">055-000-0000</a></dd>
+            <dt>営業</dt><dd>17:00〜23:30（L.O.23:00）</dd>
+            <dt>定休</dt><dd>日曜</dd>
+          </dl>
+        </div>
+      </div>
+      <p class="footer-note">
+        ※ このサイトは <strong>山梨HPかけこみ寺</strong> の制作サンプルです（架空の店舗です）。<br>
+        掲載の店名・住所・電話番号・価格はすべてサンプル用の架空のものです。
+      </p>
+    </div>
+  </footer>
+  <!-- /@parts -->
+
+  <!-- @parts: mobile-callbar -->
+  <nav class="callbar" aria-label="クイック操作">
+    <a class="callbar__tel" href="tel:055-000-0000"><span class="callbar__ico">☎</span>電話する</a>
+    <a class="callbar__map" href="https://www.google.com/maps/search/?api=1&query=山梨県甲府市中央1-2-3" target="_blank" rel="noopener"><span class="callbar__ico">📍</span>地図を見る</a>
+  </nav>
+  <!-- /@parts -->
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
